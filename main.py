@@ -6,9 +6,18 @@ def acc_make(s):
     unlen=len(un)
     pslen=len(ps)
     if unlen>6:
-        if pslen
+        if pslen>9:
+            if not ps.isalpha():
+                if ps.isdigit():
+                    display(f'Must contain alphabetical characters', target='out' )
+                else:
+                    display(f'Successfully created', target='out')
+            else:
+                display(f'Must contain numerical characters', target='out')
+        else:
+            display(f'Password must be more than 9 characters', target="out")         
     else:
-        display(f'Username must be more than 6', target-'out')
+        display(f'Username must be more than 6 characters', target='out')
 
         
 
